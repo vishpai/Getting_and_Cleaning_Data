@@ -104,4 +104,4 @@ meltallmergedavg<-dcast(meltallmerged, subject + activity ~ variable, mean)
 tidydata<-melt(avgmeltallmerged, id=c("subject", "activity"))
 
 #export the tidy data into flat file
-write.table(meltallmerged, file="data/Getting and Cleaning Data/Project/UCI HAR Dataset/tidydata.txt")
+write.table(meltallmerged, file="data/Getting and Cleaning Data/Project/UCI HAR Dataset/tidydata.txt", row.name=FALSE )
