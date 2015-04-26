@@ -84,7 +84,6 @@ Note: This section discusses the data manipulation/tidying at high level. Detail
 8) at the last step, tidy data set was export out to text file by name tidydata.txt
 
 #Data Dictionary
-##for Human Activity Recognition Using Smartphones Dataset
 
 #####Column Name:subject	
 Details:identifies volunteer who was involved in the experiment	range						
@@ -101,9 +100,3 @@ Values:There are 80 measurements corresponding for XYZ axis
 #####Column Name:value			
 Details:stores the values for various measurements performed						
 
-
-
-1	subject		identifies volunteer who was involved in the experiment	range  between 1 thru 30			
-2	activity	exercising activities performed by volunteer		1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
-3	variables	denotes the name and axis of the measurements 		There are 80 measurements corresponding for XYZ axis
-4	value		stores the values for various measurements performed 
