@@ -1,4 +1,4 @@
-#ABOUT THE Data AND EXPERIEMENT
+#About the Data and Experiment
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers were selected for generating the training data and 30% the test data.
 
 
@@ -11,9 +11,9 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-###Reference: README.txt from the UCI HAR Dataset which is described in detail next section/s
+Reference: README.txt from the UCI HAR Dataset which is described in detail next section/s
 
-#GETTING THE DATA
+#Getting the Data
 Data for this particular assignment was obtained from the location mentioned below: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Zip file contains many files but files of our interest are listed below.  
@@ -30,8 +30,8 @@ Zip file contains many files but files of our interest are listed below.
 
 Last 8 data sets are contains the data that are used in the program. 
 
-#ABOUT THE DATA
-###Reference: features_info.txt from the UCI HAR Dataset 
+#About the Data
+Reference: features_info.txt from the UCI HAR Dataset 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. Time and frequency domain signals were captured for various subjects during various exercising methods using electronic/smart wearables. All the measurements were made in 3 dimensions - XYZ for the following:
 tGravityAcc-XYZ
@@ -53,7 +53,7 @@ fBodyGyroJerkMag
 
 Data also contains number of calculated variables but for the purpose of this project we are considering only 2 variables - mean and standard deviation which are denoted by mean and std respectively.
 
-#OBSERVATION ABOUT THE DATA
+#Observations about the Data
 It was observed that data lot of noise/data quality issues such as:
  * not easily understandable column names
  * abbreviated column names
@@ -64,7 +64,7 @@ More over data set is captured distinctly and remain separately. Many inferences
 
 Next section describes the various processing and manipulations that are performed to reach at the tidy data set.
 
-#LOADING/TRANSFORMATIONS/TIDYING OF THE DATA
+#Loading/Transformations/Tidying of the Data
 Note: This section discusses the data manipulation/tidying at high level. Detailed documentation is included in the program itself. Please refer to run_analysis.R file for more details.
 
 1) individual files are loaded into corresponding data frame.  Related data sets from test and train are carefully merged into single data frame. For example: x_test and x_train data sets were merged together into one data frame.
@@ -83,9 +83,16 @@ Note: This section discusses the data manipulation/tidying at high level. Detail
 
 8) at the last step, tidy data set was export out to text file by name tidydata.txt
 
-#DATA DICTIONARY OF Human Activity Recognition Using Smartphones Dataset
+#Data Dictionary for Human Activity Recognition Using Smartphones Dataset
 
-No.	Column Name	Details 						Values
+####Column Name:subject	
+Details:identifies volunteer who was involved in the experiment	range						
+Values:between 1 thru 30
+
+
+
+
+
 1	subject		identifies volunteer who was involved in the experiment	range  between 1 thru 30			
 2	activity	exercising activities performed by volunteer		1 WALKING 2 WALKING_UPSTAIRS 3 WALKING_DOWNSTAIRS 4 SITTING 5 STANDING 6 LAYING
 3	variables	denotes the name and axis of the measurements 		There are 80 measurements corresponding for XYZ axis
