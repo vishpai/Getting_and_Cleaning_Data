@@ -4,7 +4,7 @@ This repository contains 3 files:
 * tidydata.txt: final tidy set created by run_analysis.R
 
 References:
-I have heavily relied on followingin completing the assignment:
+I have heavily relied on following in completing the assignment:
 * class lectures and materials 
 * bing 
 * community discussion forums
